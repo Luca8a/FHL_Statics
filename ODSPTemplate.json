@@ -2,27 +2,27 @@
   "value": {
     "templatedAppDefinitions": [
       {
-          "version": "1.0.0",
-          "id": "d6949b98-b305-43dc-a291-4c6cff67f88e",
-          "name": "SharePoint Agent",
-          "developerName": "Microsoft Corporation",
-          "isBlockable": false,
-          "shortDescription": "This is an agent created based on the sources selected by its owner.",
-          "longDescription": "Agents are created and customized based on the sources selected, including SharePoint sites, documents, and other files. Users can start conversations with these agents directly from a SharePoint site or by adding an agent to a Teams group chat and get the support they need to optimize their productivity with AI. ",
-          "largeImageURL": "https://statics.teams.cdn.office.net/evergreen-assets/apps/sharepoint_agent.png?v=0.3",
-          "getTemplatedAppInstanceUrl": {
+        "version": "1.0.0",
+        "id": "d6949b98-b305-43dc-a291-4c6cff67f88e",
+        "name": "SharePoint Agent",
+        "developerName": "Microsoft Corporation",
+        "isBlockable": false,
+        "shortDescription": "This is an agent created based on the sources selected by its owner.",
+        "longDescription": "Agents are created and customized based on the sources selected, including SharePoint sites, documents, and other files. Users can start conversations with these agents directly from a SharePoint site or by adding an agent to a Teams group chat and get the support they need to optimize their productivity with AI. ",
+        "largeImageURL": "https://statics.teams.cdn.office.net/evergreen-assets/apps/sharepoint_agent.png?v=0.3",
+        "getTemplatedAppInstanceUrl": {
           "urlTemplate": "https://substrate.office.com/KnowledgeGraph/api/v1.0/CustomCopilotBot/TeamsManifests/{templatedInstanceAppId}",
           "authModel": "substrate"
-          },
-          "searchTemplatedAppsUrl": {
+        },
+        "searchTemplatedAppsUrl": {
           "urlTemplate": "https://substrate.office.com/KnowledgeGraph/api/v1.0/CustomCopilotBot/TeamsManifests",
           "authModel": "substrate"
-          },
-          "webApplicationInfo": {
+        },
+        "webApplicationInfo": {
           "id": "d6949b98-b305-43dc-a291-4c6cff67f88e",
           "resource": "api://botid-d6949b98-b305-43dc-a291-4c6cff67f88e"
-          },
-          "appInstanceDefinition": {
+        },
+        "appInstanceDefinition": {
           "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
           "manifestVersion": "devPreview",
           "version": "{$.version}",
@@ -50,17 +50,17 @@
           "accentColor": "{$.accentColor}",
           "bots": [
               {
-              "botId": "{$.bots[0].botId}",
-              "needsChannelSelector": false,
-              "isNotificationOnly": false,
-              "scopes": ["{$.bots[0].scopes}"],
-              "supportsFiles": false,
-              "supportsCalling": false,
-              "supportsVideo": false,
-              "registrationInfo": {
-                  "source": "onedriveSharepoint",
-                  "environment": "{$.bots[0].registrationInfo.environment}"
-              }
+                "botId": "{$.bots[0].botId}",
+                "needsChannelSelector": false,
+                "isNotificationOnly": false,
+                "scopes": ["{$.bots[0].scopes}"],
+                "supportsFiles": false,
+                "supportsCalling": false,
+                "supportsVideo": false,
+                "registrationInfo": {
+                    "source": "onedriveSharepoint",
+                    "environment": "{$.bots[0].registrationInfo.environment}"
+                }
               }
           ],
           "permissions": ["identity", "messageTeamMembers"],
@@ -72,8 +72,13 @@
           "webApplicationInfo": {
               "id": "{$.webApplicationInfo.id}",
               "resource": "{$.webApplicationInfo.resource}"
+          },
+          "authorization": {
+            "permissions": {
+              "resourceSpecific": "{$.authorization.permissions.resourceSpecific}"
+            }
           }
-          }
+        }
       }
     ]
   }
