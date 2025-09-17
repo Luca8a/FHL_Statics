@@ -28,7 +28,7 @@
               "permissions": {
                   "resourceSpecific": [
                       {
-                          "type": "Application",
+                          "type": "Delegated",
                           "name": "ChannelMessage.Read.Group"
                       }
                   ]
