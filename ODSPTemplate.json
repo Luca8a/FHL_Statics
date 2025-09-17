@@ -2,9 +2,9 @@
   "value": {
     "templatedAppDefinitions": [
       {
-        "version": "1.0.0",
+        "version": "0.0.1",
         "id": "d6949b98-b305-43dc-a291-4c6cff67f88e",
-        "name": "SharePoint Agent",
+        "name": "SharePoint Agent (Int)",
         "developerName": "Microsoft Corporation",
         "isBlockable": false,
         "shortDescription": "This is an agent created based on the sources selected by its owner.",
@@ -23,63 +23,60 @@
           "resource": "api://botid-d6949b98-b305-43dc-a291-4c6cff67f88e"
         },
         "appInstanceDefinition": {
-          "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
-          "manifestVersion": "devPreview",
+          "$schema": "{$.$schema}",
+          "manifestVersion": "{$.manifestVersion}",
           "version": "{$.version}",
           "id": "{$.id}",
           "packageName": "com.package.name",
           "developer": {
-              "name": "{$.developer.name}",
-              "websiteUrl": "{$.developer.websiteUrl}",
-              "privacyUrl": "{$.developer.privacyUrl}",
-              "termsOfUseUrl": "{$.developer.termsOfUseUrl}",
-              "mpnId": "{$.developer.mpnId}"
+            "name": "{$.developer.name}",
+            "websiteUrl": "{$.developer.websiteUrl}",
+            "privacyUrl": "{$.developer.privacyUrl}",
+            "termsOfUseUrl": "{$.developer.termsOfUseUrl}",
+            "mpnId": "{$.developer.mpnId}"
           },
           "name": {
-              "short": "{$.name.short}",
-              "full": "{$.name.full}"
+            "short": "{$.name.short}",
+            "full": "{$.name.full}"
           },
           "description": {
-              "short": "{$.description.short}",
-              "full": "{$.description.full}"
+            "short": "{$.description.short}",
+            "full": "{$.description.full}"
           },
           "icons": {
-              "outline": "{$.icons.outline}",
-              "color": "{$.icons.color}"
+            "outline": "{$.icons.outline}",
+            "color": "{$.icons.color}"
           },
           "accentColor": "{$.accentColor}",
           "bots": [
-              {
-                "botId": "{$.bots[0].botId}",
-                "needsChannelSelector": false,
-                "isNotificationOnly": false,
-                "scopes": ["{$.bots[0].scopes}"],
-                "supportsFiles": false,
-                "supportsCalling": false,
-                "supportsVideo": false,
-                "registrationInfo": {
-                    "source": "onedriveSharepoint",
-                    "environment": "{$.bots[0].registrationInfo.environment}"
-                }
-              }
-          ],
-          "permissions": ["identity", "messageTeamMembers"],
-          "validDomains": [
-              "*.botframework.com",
-              "login.microsoftonline.com",
-              "*.*.botframework.com"
-          ],
-          "webApplicationInfo": {
-              "id": "{$.webApplicationInfo.id}",
-              "resource": "{$.webApplicationInfo.resource}"
-          },
-          "authorization": {
-            "permissions": {
-              "resourceSpecific": {
-                "type": "Application",
-                "name": "ChannelSettings.Read.Group"
+            {
+              "botId": "{$.bots[0].botId}",
+              "needsChannelSelector": false,
+              "isNotificationOnly": false,
+              "scopes": [
+                "{$.bots[0].scopes}"
+              ],
+              "supportsFiles": false,
+              "supportsCalling": false,
+              "supportsVideo": false,
+              "registrationInfo": {
+                "source": "onedriveSharepoint",
+                "environment": "{$.bots[0].registrationInfo.environment}"
               }
             }
+          ],
+          "permissions": [
+            "identity",
+            "messageTeamMembers"
+          ],
+          "validDomains": [
+            "*.botframework.com",
+            "login.microsoftonline.com",
+            "*.*.botframework.com"
+          ],
+          "webApplicationInfo": {
+            "id": "{$.webApplicationInfo.id}",
+            "resource": "{$.webApplicationInfo.resource}"
           }
         }
       }
