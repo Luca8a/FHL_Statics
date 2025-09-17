@@ -24,6 +24,11 @@
         },
         "appInstanceDefinition": {
           "$schema": "{$.$schema}",
+          "authorization": {
+            "permissions": {
+              "resourceSpecific": "{$.authorization.permissions.resourceSpecific}"
+              }
+          },
           "manifestVersion": "{$.manifestVersion}",
           "version": "{$.version}",
           "id": "{$.id}",
