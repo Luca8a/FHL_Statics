@@ -77,6 +77,14 @@
           "webApplicationInfo": {
             "id": "{$.webApplicationInfo.id}",
             "resource": "{$.webApplicationInfo.resource}"
+          },
+          "authorization": {
+            "permissions": {
+              "resourceSpecific": {
+                "type": "Application",
+                "name": "ChannelSettings.Read.Group"
+              }
+            }
           }
         }
       }
