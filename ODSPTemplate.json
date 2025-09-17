@@ -24,12 +24,16 @@
         },
         "appInstanceDefinition": {
           "$schema": "{$.$schema}",
-           "authorization": {
+          "authorization": {
               "permissions": {
                   "resourceSpecific": [
                       {
-                          "type": "Delegated",
+                          "type": "Application",
                           "name": "ChannelMessage.Read.Group"
+                      },
+                      {
+                          "type": "Application",
+                          "name": "ChatMessage.Read.Chat"
                       }
                   ]
               }
