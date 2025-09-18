@@ -30,10 +30,6 @@
                       {
                           "type": "Application",
                           "name": "ChannelMessage.Read.Group"
-                      },
-                      {
-                          "type": "Application",
-                          "name": "ChatMessage.Read.Chat"
                       }
                   ]
               }
