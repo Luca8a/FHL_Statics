@@ -24,16 +24,6 @@
         },
         "appInstanceDefinition": {
           "$schema": "{$.$schema}",
-          "authorization": {
-              "permissions": {
-                  "resourceSpecific": [
-                      {
-                          "type": "Application",
-                          "name": "ChannelMessage.Read.Group"
-                      }
-                  ]
-              }
-          },
           "manifestVersion": "{$.manifestVersion}",
           "version": "{$.version}",
           "id": "{$.id}",
