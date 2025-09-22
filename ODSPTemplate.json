@@ -66,7 +66,7 @@
               "scopes": [
                 "{$.bots[0].scopes}"
               ],
-              "supportsFiles": true,
+              "supportsFiles": false,
               "supportsCalling": false,
               "supportsVideo": false,
               "registrationInfo": {
@@ -85,7 +85,7 @@
             "*.*.botframework.com"
           ],
           "webApplicationInfo": {
-            "id": "{$.webApplicationInfo.id}",
+            "id": "d6949b98-b305-43dc-a291-4c6cff67f88e",
             "resource": "{$.webApplicationInfo.resource}"
           }
         }
