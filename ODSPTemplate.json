@@ -36,7 +36,7 @@
             "mpnId": "{$.developer.mpnId}"
           },
           "name": {
-            "short": "Knowledge Agent",
+            "short": "{$.name.short}",
             "full": "{$.name.full}"
           },
           "description": {
