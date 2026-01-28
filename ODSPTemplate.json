@@ -16,7 +16,7 @@
         },
         "searchTemplatedAppsUrl": {
           "urlTemplate": "https://substrate-sdf.office.com/TaigerService/ODSPCustomCopilot/apps/manifest",
-          "authModel": "SubstrateTaiger""
+          "authModel": "SubstrateTaiger"
         },
         "webApplicationInfo": {
           "id": "d6949b98-b305-43dc-a291-4c6cff67f88e",
