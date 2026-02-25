@@ -15,7 +15,7 @@
           "authModel": "SubstrateTaiger"
         },
         "searchTemplatedAppsUrl": {
-          "urlTemplate": "https://substrate-sdf.office.com/TaigerService/ODSPCustomCopilot/apps/manifest",
+          "urlTemplate": "https://substrate-sdf.office.com/TaigerService/ODSPCustomCopilot/apps/manifests",
           "authModel": "SubstrateTaiger"
         },
         "webApplicationInfo": {
